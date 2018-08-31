@@ -32,7 +32,7 @@ public abstract class AbstractBoosterApplicationTest {
            .get(GREETING_PATH)
            .then()
            .statusCode(200)
-           .body("content", is(String.format(Greeting.FORMAT, "World2 yo")+" yo"));
+           .body("content", is(String.format(Greeting.FORMAT, "World2")+" yo"));
     }
 
     @Test
