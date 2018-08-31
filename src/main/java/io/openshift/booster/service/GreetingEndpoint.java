@@ -29,7 +29,7 @@ public class GreetingEndpoint {
     @GET
     @Produces("application/json")
     public Greeting greeting(@QueryParam("name") @DefaultValue("World2") String name) {
-        final String message = String.format(Greeting.FORMAT, name);
+        final String message = String.format(Greeting.FORMAT, name) + " yo";
         return new Greeting(message);
     }
 }
